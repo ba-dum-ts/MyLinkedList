@@ -1,6 +1,6 @@
 import java.util.NoSuchElementException;
 
-public class MyLinkedList {
+public class MyLinkedList<T>{
     public  Node First;
     private  Node Last;
     private  int Length;
@@ -10,11 +10,11 @@ public class MyLinkedList {
      */
 
     public class Node{ // en nod med värdet data som är kopplad med både elementet före samt efter
-        public int Data;
+        public T Data;
         Node Previous;
         public Node Next;
 
-        public Node(int data){ // konstruktor som begär en int för att kallas
+        public Node(T data){ // konstruktor som begär en int för att kallas
             this.Data = data;
         }
     }
@@ -65,8 +65,8 @@ public class MyLinkedList {
         return temporaryLast;
     }
 
-    public <T> void AddLast(T data){ // skapar en generic element i slutet som (unironically) endast tar emot data typen integer
-        Node newNode = new Node((Integer) data);
+    public void AddLast(T data){ // skapar en generic element i slutet
+        Node newNode = new Node(data);
 
         if(Length == 0){ // om listan är tom
             First = newNode;
@@ -80,7 +80,7 @@ public class MyLinkedList {
         Length++;
     }
 
-    public void InsertAt(int index) throws IndexOutOfBoundsException{
+    public void InsertAt(T index) throws IndexOutOfBoundsException{
         Node newNode = new Node(index);
         newNode.Next = null;
 

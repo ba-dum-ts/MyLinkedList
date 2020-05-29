@@ -7,7 +7,7 @@ public class MyList extends MyLinkedList {
         mll.AddLast(911);
         mll.AddLast(666);
 
-        System.out.println("jag har endast kodat så att det fungerar. \nDet dock befinner inga försök i att rädda programmet från att crasha (jag hade ont om tid), \nså försök att endast använda integer.");
+        System.out.println("jag har endast kodat så att det fungerar. \nDet dock befinner inga försök i att rädda programmet från att crasha (jag hade ont om tid)");
         System.out.println();
         System.out.println();
 
