@@ -3,9 +3,9 @@ public class MyList extends MyLinkedList {
 
     public void main(String args[]){
         mll.AddLast(420);
-        mll.AddLast(69);
-        mll.AddLast(911);
-        mll.AddLast(666);
+        mll.AddLast("sixty-nine");
+        mll.AddLast(9.11);
+        mll.AddLast('6' + '6' + '6');
 
         System.out.println("jag har endast kodat så att det fungerar. \nDet dock befinner inga försök i att rädda programmet från att crasha (jag hade ont om tid)");
         System.out.println();
