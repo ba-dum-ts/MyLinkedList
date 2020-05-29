@@ -1,6 +1,6 @@
 import java.util.NoSuchElementException;
 
-public class MyLinkedList<T>{
+public class MyLinkedList<T extends Number>{
     public  Node First;
     private  Node Last;
     private  int Length;
@@ -123,8 +123,6 @@ public class MyLinkedList<T>{
             Node node = temporaryFirst;
             temporaryFirst = node.Previous;
             temporaryFirst.Next = node.Next;
-
-            node = null;
             Length--;
         }
     }
