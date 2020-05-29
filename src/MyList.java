@@ -24,6 +24,5 @@ public class MyList extends MyLinkedList {
             System.out.print(temporaryFirst.Data + " ---->");
             temporaryFirst = temporaryFirst.Next;
         }
-        System.out.println("null");
     }
 }
