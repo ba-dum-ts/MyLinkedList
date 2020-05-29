@@ -1,9 +1,9 @@
 import java.util.NoSuchElementException;
 
 public class MyLinkedList<T extends Number>{
-    public  Node First;
-    private  Node Last;
-    private  int Length;
+    private Node First;
+    private Node Last;
+    private int Length;
 
     /*
         En länkad lista med noder som existerar endast för att bli ärvd
@@ -11,7 +11,7 @@ public class MyLinkedList<T extends Number>{
 
     public class Node{ // en nod med värdet data som är kopplad med både elementet före samt efter
         public T Data;
-        Node Previous;
+        public Node Previous;
         public Node Next;
 
         public Node(T data){ // konstruktor som begär en int för att kallas
@@ -19,7 +19,7 @@ public class MyLinkedList<T extends Number>{
         }
     }
 
-    public MyLinkedList(){ // reset
+    public  MyLinkedList(){ // reset
         this.First = null;
         this.Last = null;
         this.Length = 0;
