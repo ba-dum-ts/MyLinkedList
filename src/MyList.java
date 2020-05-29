@@ -1,4 +1,4 @@
-public class MyList extends MyLinkedList {
+public class MyList extends MyLinkedList{
     static MyLinkedList<Number> mll = new MyLinkedList<>();
 
     public void main(String[] args){
